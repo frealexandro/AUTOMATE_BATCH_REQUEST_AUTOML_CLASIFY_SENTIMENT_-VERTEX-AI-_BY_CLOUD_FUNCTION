@@ -1,0 +1,9 @@
+# Function dependencies, for example:
+# package>=version
+numpy==1.22.3
+openpyxl==3.0.9
+pandas==1.4.1
+XlsxWriter==3.0.3
+google-cloud-aiplatform==1.13.0
+protobuf==3.20.1
+gcsfs
