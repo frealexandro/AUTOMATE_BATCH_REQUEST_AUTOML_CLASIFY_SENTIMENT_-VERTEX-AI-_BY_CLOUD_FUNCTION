@@ -1,26 +1,25 @@
 # cloud function batch python 
 
-_In this project we find a cloud function in gcp using the FLASK framework  calling by bucket trigger  that executes a batch prediction of model sentiment analisys_
+_In this project, we create a cloud function in GCP using the FLASK framework that is triggered by a bucket and executes a batch prediction of a sentiment analysis model._
 
 ## Starting 🚀
 
-_To get the project on your local machine please clone the repository with the name of **cloud_function_python**, remember that you must have permission from the organization_
+_To get the project on your local machine, please clone the repository named cloud_function_python. Note that you must have permission from the organization to do so._
 
 ### Pre requirements 📋
 
-_This project must be run directly in a GCP cloud function with **Python 3.10** language or if desired it can also be run directly in your virtual machine with some modifications. You must install the following dependencies in the cloud function or environment vrtual contained in the file requirements.txt_
+_This project must be run directly in a GCP cloud function with Python 3.10 language or if desired it can also be run directly in your virtual machine with some modifications. You must install the following dependencies in the cloud function or virtual environment, as listed in the file requirements.txt:_
 
 ```
 pip install -r requeriments.txt
 ```
-_In the cloud function it is only necessary to load the file, once it is done DEPLOY it, the dependencies will be installed automatically_
+_In the cloud function, it is only necessary to load the file, and once it is done, DEPLOY it. The dependencies will be installed automatically._
 
 
 ###installation 🔧
 
 
-1.a cloud function must be created in GCP with a trigger of  bucket to make the batch we will modify diferent paths where we will to **procesing, input, output of the data**, also we neeed to modify our **project id, model id, location, job_name**.
-however we need to remmeber thsi project create a jsonl file due in this way was buit the model of **sentimemt analysis**  to understand more about how to built a make batch prediction see the **links** of this readme.to modify this params see the file **params.py**
+1.A cloud function must be created in GCP with a bucket trigger to make the batch. We will modify different paths where we will perform **processing, input, and output** of the data. We also need to modify our **project id, model id, location, job_name**. Note that this project creates a jsonl file as the model for **sentiment analysis** was built in this way. To understand more about how to make a batch prediction, see the links in this readme. To modify these parameters, see the file **params.py**
 
 
 ```
@@ -50,12 +49,12 @@ however we need to remmeber thsi project create a jsonl file due in this way was
 ## running the tests ⚙️
 
 
-_The cloud function is at its maximum performance, this batch is to make a batch more or less 7000 registers. In the event that it is more gigantic in the future, a more scalable solution must be implemented with another google cloud service, but we are referring to perhaps more than 50 gb of processing, for now the cloud function, being designed with OOP, is relatively very stable and scalable_
+_The cloud function is at its maximum performance, this batch is to make a batch more or less 7000 records. In the event that it is more gigantic in the future, a more scalable solution must be implemented with another Google Cloud service, but we are referring to perhaps more than 50 GB of processing. For now, the cloud function, being designed with OOP, is relatively very stable and scalable._
 
 ###Analyze end-to-end tests🔩
 
 
-_If the whole process is executed correctly,if the cloud function response is all succeded will show this message **JobState.JOB_STATE_SUCCEEDED** on GCP logs however before appear the next  messages_
+_If the whole process is executed correctly, the cloud function response will show the message "JobState.JOB_STATE_SUCCEEDED" on GCP logs. Before this message appears, the following messages should be displayed:_
 
 ```
 The Params is: Ok
@@ -69,7 +68,7 @@ Prediction Batch: ok
 
 ### coding style ⌨️
 
-_This program was completely modularized through object-oriented programming and also attempted to be codified under the **pep 8** regime._
+_This program was completely modularized through object-oriented programming and also attempted to be codified under the PEP 8 regime._
 
 
 
@@ -82,11 +81,11 @@ _This program was completely modularized through object-oriented programming and
 * [BATCH PREDICTIONS](https://cloud.google.com/vertex-ai/docs/predictions/overview#batch_predictions) - Overview of getting predictions on Vertex AI
 * [Vertex AI](https://cloud.google.com/vertex-ai/docs/training/create-training-pipeline) - Create training pipelines
 
-## Versionado 📌
+## Versioning 📌
 
 For all available versions, see the [tags en este repositorio](https://github.com/frealexandro/cloud_function_batch_python).
 
-## Autores ✒️
+## Authors ✒️
 
 
 * **Santiago Novoa** - *Trabajo Inicial - Documentacion * - [Frealexandro](https://github.com/frealexandro)
