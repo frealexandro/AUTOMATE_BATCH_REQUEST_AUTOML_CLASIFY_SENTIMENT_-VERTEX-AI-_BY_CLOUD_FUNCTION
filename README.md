@@ -1,6 +1,14 @@
 # cloud function batch python 
 
-_In this project, we create a cloud function in GCP using the FLASK framework that is triggered by a bucket and executes a batch prediction of a sentiment analysis model._
+_This code is written in Python and uses the Google Cloud AI Platform to perform batch predictions on a given dataset. The script starts by importing several modules, including the Google Cloud AI Platform, pandas, and numpy, as well as some custom modules like "params", "input_data", "data_frame", "generator", and "generator_path".
+
+The first step in the code is to import the parameters of the project with the "from params import*" statement. Then, the code uses the "from input_data import*" statement to read the data from a specified location. After that, it uses the "from data_frame import*" statement to extract the sentiment of the data using the "Data_Frame" class.
+
+After that, the code uses the "from generator import*" statement to generate data files in txt format, using the "Generator" class. After that, it uses the "from generator_path import*" statement to generate a list of paths for the sentiment files.
+
+The script then uses the "batch_prediction_job" function to perform batch predictions on the dataset. This function takes several parameters, including the project, location, model resource name, job display name, GCS source, and GCS destination. It uses the AI Platform's "batch_predict" method to perform the batch prediction job.
+
+Finally, the "run" function is called, which calls the different functions to read the data, extract the sentiment, generate the data files, and perform the batch prediction._
 
 ## Starting 🚀
 
